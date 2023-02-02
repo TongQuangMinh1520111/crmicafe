@@ -14,7 +14,6 @@ const Layout = ({ title, children }) => {
       <div id="wrapper">
        <Header/>
         <main>{children}</main>
-        <footer><h1>this is footer</h1></footer>
       </div>
     </>
   );
