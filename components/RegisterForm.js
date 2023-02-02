@@ -36,7 +36,12 @@ const RegisterForm = () => {
           <form onSubmit={handleSubmit}>
             <FormControl mb="20px">
               <Flex>
-                <FormLabel htmlFor="name" w="200px" fontSize="18px">
+                <FormLabel
+                  htmlFor="name"
+                  w="200px"
+                  fontSize="18px"
+                  flexShrink="0"
+                >
                   Họ Và Tên
                 </FormLabel>
                 <Field
@@ -53,7 +58,12 @@ const RegisterForm = () => {
             </FormControl>
             <FormControl mb="20px">
               <Flex>
-                <FormLabel htmlFor="number" w="200px" fontSize="18px">
+                <FormLabel
+                  htmlFor="number"
+                  w="200px"
+                  fontSize="18px"
+                  flexShrink="0"
+                >
                   Số Điện Thoại
                 </FormLabel>
                 <Field
@@ -70,7 +80,12 @@ const RegisterForm = () => {
             </FormControl>
             <FormControl mb="20px">
               <Flex>
-                <FormLabel htmlFor="email" w="200px" fontSize="18px">
+                <FormLabel
+                  htmlFor="email"
+                  w="200px"
+                  fontSize="18px"
+                  flexShrink="0"
+                >
                   Email
                 </FormLabel>
                 <Field
@@ -87,7 +102,12 @@ const RegisterForm = () => {
             </FormControl>
             <FormControl mb="20px">
               <Flex>
-                <FormLabel htmlFor="address" w="200px" fontSize="18px">
+                <FormLabel
+                  htmlFor="address"
+                  w="200px"
+                  fontSize="18px"
+                  flexShrink="0"
+                >
                   Địa Chỉ
                 </FormLabel>
                 <Field
@@ -105,16 +125,11 @@ const RegisterForm = () => {
 
             <FormControl mb="20px">
               <Flex>
-                <FormLabel w="200px" fontSize="18px">
+                <FormLabel w="200px" fontSize="18px" flexShrink="0">
                   Nhu Cầu
                 </FormLabel>
                 <Stack spacing={5} direction="row">
-                  <Field
-                    as={Checkbox}
-                    id="game"
-                    name="game"
-                    colorScheme="red"
-                  >
+                  <Field as={Checkbox} id="game" name="game" colorScheme="red">
                     Phòng Game
                   </Field>
                   <Field
@@ -130,7 +145,12 @@ const RegisterForm = () => {
             </FormControl>
             <FormControl mb="60px">
               <Flex>
-                <FormLabel htmlFor="notes" w="200px" fontSize="18px">
+                <FormLabel
+                  htmlFor="notes"
+                  w="200px"
+                  fontSize="18px"
+                  flexShrink="0"
+                >
                   Ghi Chú
                 </FormLabel>
                 <Textarea
