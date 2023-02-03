@@ -1,20 +1,20 @@
-import { Image } from '@chakra-ui/react';
+import { Image } from "@chakra-ui/react";
 // import Image from "next/image";
 import React from "react";
-import { Container ,Center} from "@chakra-ui/react";
-import Link from 'next/link';
+import { Container, Center } from "@chakra-ui/react";
+import Link from "next/link";
 const Header = () => {
   return (
     <header>
-      <Container maxW="1200px"  p="20px 0 60px">
+      <Container maxW="1200px" p={{ base: "10px 0 40px", md: "20px 0 60px" }}>
         <Center>
-            <Link href="#">
+          <Link href="#">
             <Image
               src="/images/logo.webp"
               alt="Dan Abramov"
-              width={200}
+              width={{ base: "160px", md: "200px" }}
             />
-            </Link>
+          </Link>
         </Center>
       </Container>
     </header>
