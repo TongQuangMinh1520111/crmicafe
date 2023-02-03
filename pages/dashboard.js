@@ -17,7 +17,6 @@ const Dashboard = () => {
     <Layout title="Home page">
       <Container maxW="1200px">
         <ListCustomers />
-       <Text fontSize={{ base: '24px', md: '40px', lg: '56px' }} >This is Test</Text>
       </Container>
     </Layout>
   );
