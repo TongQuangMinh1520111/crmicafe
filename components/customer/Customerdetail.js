@@ -17,10 +17,11 @@ const Customerdetail = ({ isOpen, onClose }) => {
   return (
     <Modal isOpen={isOpen} onClose={onClose}>
       <ModalOverlay />
-      <ModalContent maxW="900px" m="60px auto" p="30px 30px 40px">
+      <ModalContent maxW="900px" className="customer-modal">
         <ModalHeader
           textAlign="center"
-          fontSize="30px"
+          fontSize={{ base: "25px", md: "30px" }}
+          p="0"
           fontWeight="bold"
           mb="30px"
         >

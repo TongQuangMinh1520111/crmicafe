@@ -18,7 +18,7 @@ const RegisterForm = () => {
   return (
     <Container maxW="900px" pb="60px">
       <Center mb="40px">
-        <Heading>Register</Heading>
+        <Heading fontSize={{ base: "25px", md: "30px" }}>Register</Heading>
       </Center>
       <Formik
         initialValues={{
@@ -39,7 +39,7 @@ const RegisterForm = () => {
                 <FormLabel
                   htmlFor="name"
                   w={{ base: "100%", sm: "160px", lg: "200px" }}
-                  fontSize={{base:'16px',md:'18px'}}
+                  fontSize={{ base: "16px", md: "18px" }}
                   flexShrink="0"
                 >
                   Họ Và Tên
@@ -61,7 +61,7 @@ const RegisterForm = () => {
                 <FormLabel
                   htmlFor="number"
                   w={{ base: "100%", sm: "160px", lg: "200px" }}
-                  fontSize={{base:'16px',md:'18px'}}
+                  fontSize={{ base: "16px", md: "18px" }}
                   flexShrink="0"
                 >
                   Số Điện Thoại
@@ -83,7 +83,7 @@ const RegisterForm = () => {
                 <FormLabel
                   htmlFor="email"
                   w={{ base: "100%", sm: "160px", lg: "200px" }}
-                  fontSize={{base:'16px',md:'18px'}}
+                  fontSize={{ base: "16px", md: "18px" }}
                   flexShrink="0"
                 >
                   Email
@@ -105,7 +105,7 @@ const RegisterForm = () => {
                 <FormLabel
                   htmlFor="address"
                   w={{ base: "100%", sm: "160px", lg: "200px" }}
-                  fontSize={{base:'16px',md:'18px'}}
+                  fontSize={{ base: "16px", md: "18px" }}
                   flexShrink="0"
                 >
                   Địa Chỉ
@@ -114,7 +114,7 @@ const RegisterForm = () => {
                   as={Input}
                   id="address"
                   name="address"
-                  type="address"
+                  type="text"
                   variant="filled"
                   placeholder="Địa Chỉ"
                   focusBorderColor="crimson"
@@ -127,7 +127,7 @@ const RegisterForm = () => {
               <Flex flexWrap={{ base: "wrap", sm: "nowrap" }}>
                 <FormLabel
                   w={{ base: "100%", sm: "160px", lg: "200px" }}
-                  fontSize={{base:'16px',md:'18px'}}
+                  fontSize={{ base: "16px", md: "18px" }}
                   flexShrink="0"
                 >
                   Nhu Cầu
@@ -147,12 +147,12 @@ const RegisterForm = () => {
                 </Stack>
               </Flex>
             </FormControl>
-            <FormControl mb={{base:'40px', md:'60px'}}>
+            <FormControl mb={{ base: "40px", md: "60px" }}>
               <Flex flexWrap={{ base: "wrap", sm: "nowrap" }}>
                 <FormLabel
                   htmlFor="notes"
                   w={{ base: "100%", sm: "160px", lg: "200px" }}
-                  fontSize={{base:'16px',md:'18px'}}
+                  fontSize={{ base: "16px", md: "18px" }}
                   flexShrink="0"
                 >
                   Ghi Chú
