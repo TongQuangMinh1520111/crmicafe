@@ -1,17 +1,26 @@
-import { Flex, ListItem, Text } from "@chakra-ui/react";
+import { useDisclosure, Flex, Text, ListItem, Button } from "@chakra-ui/react";
 import React from "react";
+import Customerdetail from "./Customerdetail";
 
 const Customer = () => {
-  return <>
- <ListItem cursor={"pointer"}>
-  <Flex>
-    <Text w={200}>Name</Text>
-    <Text w={200}>Sdt</Text>
-    <Text>nhu cau</Text>
-  </Flex>
- </ListItem>
- 
-  </>;
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  return (
+    <>
+      <ListItem className="item">
+        <Flex className="flex-box">
+          <Text>1</Text>
+          <Text>nguyễn Văn A</Text>
+          <Text>0961454249</Text>
+          <Text>Phòng Game</Text>
+          <Text>Đang Xử Lý</Text>
+          <Text>
+            <span className="btn-detail" onClick={onOpen}>Chi Tiết</span>
+          </Text>
+        </Flex>
+        <Customerdetail isOpen={isOpen} onClose={onClose} />
+      </ListItem>
+    </>
+  );
 };
 
 export default Customer;
