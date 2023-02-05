@@ -4,10 +4,6 @@ import Customer from "./Customer";
 
 const ListCustomers = () => {
   return (
-    <div>
-      <Center mb="40px">
-        <Heading>Dữ liệu khách hàng</Heading>
-      </Center>
       <div className="wrap-customer">
         <List className="list-customer">
           <ListItem className="item">
@@ -23,7 +19,6 @@ const ListCustomers = () => {
           <Customer />
         </List>
       </div>
-    </div>
   );
 };
 
