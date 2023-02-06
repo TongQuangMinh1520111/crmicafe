@@ -62,7 +62,7 @@ const Login = () => {
                     fontSize={{ base: "16px", md: "18px" }}
                     flexShrink="0"
                   >
-                    Địa Chỉ
+                    Mật Khẩu
                   </FormLabel>
                   <Field
                     as={Input}

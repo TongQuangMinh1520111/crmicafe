@@ -1,9 +1,12 @@
 import { Center, Heading, Text, List, ListItem, Flex } from "@chakra-ui/react";
 import React from "react";
 import Customer from "./Customer";
+import CustomerField from "./CustomerField";
 
 const ListCustomers = () => {
   return (
+    <>
+      <CustomerField />
       <div className="wrap-customer">
         <List className="list-customer">
           <ListItem className="item">
@@ -19,6 +22,7 @@ const ListCustomers = () => {
           <Customer />
         </List>
       </div>
+    </>
   );
 };
 
