@@ -1,5 +1,5 @@
 import { Container, Flex, FormControl, Select } from "@chakra-ui/react";
-import { Field, Formik } from "formik";
+import { Field, Form, Formik } from "formik";
 import React from "react";
 
 const CustomerField = () => {
@@ -14,15 +14,18 @@ const CustomerField = () => {
           console.log(JSON.stringify(value, null, 2));
         }}
       >
-        {({ handleSubmit, errors, touched }) => (
-          <form className="field-form">
+        {({ handleChange, values: { value }, submitForm }) => (
+          <Form className="field-form">
             <Flex flexWrap={{ base: "wrap", sm: "nowrap" }}>
               <FormControl m={{ base: "0 0 10px", sm: "0 30px 0 0" }}>
                 <Field
                   as={Select}
                   name="assign"
-                  variant="filled"
-                  onChange={handleSubmit}
+                  value={value}
+                  onChange={e => {
+                    handleChange(e);
+                    submitForm();
+                  }}
                 >
                   <option value="Tất cả">Tất cả</option>
                   <option value="Đã assign">Đã assign</option>
@@ -33,8 +36,11 @@ const CustomerField = () => {
                 <Field
                   as={Select}
                   name="status"
-                  variant="filled"
-                  onChange={handleSubmit}
+                  value={value}
+                  onChange={e => {
+                    handleChange(e);
+                    submitForm();
+                  }}
                 >
                   <option value="Tất cả">Tất cả</option>
                   <option value="Hoàn thành">Hoàn thành</option>
@@ -43,7 +49,7 @@ const CustomerField = () => {
                 </Field>
               </FormControl>
             </Flex>
-          </form>
+          </Form>
         )}
       </Formik>
     </Container>

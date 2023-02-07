@@ -63,14 +63,17 @@ const Customerdetail = ({ isOpen, onClose }) => {
                 alert(JSON.stringify(value, null, 2));
               }}
             >
-              {({ handleSubmit, errors, touched }) => (
+              {({  values: { value }, handleChange, submitForm }) => (
                 <form className="staff-form">
                   <FormControl>
                     <Field
                       as={Select}
                       name="staff"
-                      variant="filled"
-                      onChange={handleSubmit}
+                      value={value}
+                      onChange={e => {
+                        handleChange(e);
+                        submitForm();
+                      }}
                     >
                       <option value="Nguyen Van A">Nguyen Van A</option>
                       <option value="Nguyen Van B">Nguyen Van B</option>
